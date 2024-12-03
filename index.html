@@ -32,4 +32,27 @@
     
     <h2>Links</h2>
     <a href="https://www.example.com">Visit Example.com</a><br>
-    <a href="https
+    <a href="https://www.anotherexample.com">Visit AnotherExample.com</a>
+    
+    <h2>Images</h2>
+    <img src="https://via.placeholder.com/200" alt="Placeholder Image 1">
+    <img src="https://via.placeholder.com/200" alt="Placeholder Image 2">
+
+    <footer>
+        <p>Thank you for visiting!</p>
+    </footer>
+    
+    <script>
+    fetch('log_ip.php')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        console.log('IP address logged successfully.');
+      })
+      .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+      });
+    </script>
+</body>
+</html>
